@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <div id= "container">
+        <h1>Pomodoro Timer & Task List</h1>
+        <!-- 
+        1. Try to use different 
+        2. Javascript to run Pomodoro timer (count down)
+        3. When milestone is reached start short break 
+        **Look at Week 3 HW for timer
+            - setINterval invoke function at whatever interval
+            - substract value in milliseconds
+            - conditional statement
+         -->
+        <!-- Timer -->
+        <div id="timerContainer">
+            <h1 id= "timer">25:00</h1>
+
+        </div>
+
+        <!-- Start Button -->
+        <div id= "startTimer">
+            <button onclick="runTime()">Start</button>
+
+        </div>
+        <!-- Add task input to list -->
+       
+        <!-- Task List with add task button -->
+            
+        <div class= "taskInputContainer">
+            <input type="text" id="taskInput" />
+            <button onclick="createNewTask()">Add Task</button>
+            
+            
+            <h2 id= "taskListTitle">Task List</h3>
+            <table id= "taskListContainer">
+                <tr class="taskList">
+                    <td class="task">Study for Azure Admin Associate Exam</td>
+                    <td class="deleteButtonTd"><button class="deleteBtn"> Delete</button></td>
+                </tr>
+                <tr class="taskList">
+                    <td class="task">Study for AWS Security Administrator</td>
+                    <td class="deleteButtonTd"><button class="deleteBtn"> Delete</button></td>
+                </tr>
+                <tr class="taskList">
+                    <td class="task">Azure virtual network lab </td>
+                    <td class="deleteButtonTd"><button class="deleteBtn"> Delete</button></td>
+                </tr>
+            
+            
+            </table>
+        </div>
+    </div>
+
+
+    
+    <script src="./index.js"></script>
+</body>
+</html>
